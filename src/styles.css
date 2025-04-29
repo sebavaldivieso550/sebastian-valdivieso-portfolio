@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --text-color-dark: #343a40;
+    --text-color-light: #f8f9fa;
+    --background-color-light:#f8f9fa;
+    --background-color-dark: #e9ecef;
+    --card-background: #ffffff;
+    --border-color: #dee2e6;
+    --link-color: var(--primary-color);
+    --link-hover-color: #0056b3;
+
+    --font-family-primary: 'Roboto',
+    --font-family-heading: 'Montserrat', sans-serif;
+    --font-size-base: 1rem;
+    --line-height-base: 1.6;
+
+    --spacing-unit: 8px;
+    --section-padding: 60px;
+
+    transition: backround-color 0.3s ease, color 0.3s ease;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+.dark-theme {
+    --primary-color: #61dafb;
+    --secondary-color: #a0aec0;
+    --text-color-dark: #e2e8f0;
+    --text-color-light: #1a202c;
+    --background-color-light:#1a202c;
+    --background-color-dark: #2d3748;
+    --card-background: #2d3748;
+    --border-color: #4a5568;
+    --link-color: var(--primary-color);
+    --link-hover-color: #4299e1;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-color-dark);
+    background-color: var(--background-color-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    transition: background-color 0.3s, color 0.3s ease;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-family-heading);
+    color: var(--text-color-dark);
+    margin-top: 0;
+    margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align:  center;
+    margin-bottom: calc(var(--spacing-unit) * 6);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+.themeToggleButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    z-index: 1000;
+}
+
+.themeToggleButton:hover {
+    background-color: var(--link-hover-color);
+    transform: scale(1,1);
+}
+
+.themeToggleButton:active {
+    transform: scale(0.9);
+}
