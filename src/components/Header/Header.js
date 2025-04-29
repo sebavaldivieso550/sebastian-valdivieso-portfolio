@@ -12,8 +12,10 @@ function Header() {
                         alt="Foto de perfil de Sebastian Valdivieso"
                         className={styles.profileImage}
                     />
-                    <h1>Sebastian Valdivieso</h1>
-                    <p>Desarrollador React</p>
+                    <div className={styles.profileInfo}>
+                        <h1>Sebastian Valdivieso</h1>
+                        <p>Desarrollador React</p>
+                    </div>
                 </div>
             </div>
         </header>
